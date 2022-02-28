@@ -6,18 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!--bootstrap5-->
+
+    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!------------>
-    <link rel="stylesheet" href="/style/style.css">
+
+    <!-- Fichier CSS personnalisé  -->
+    <link rel="stylesheet" href="style/style.css">
+
 </head>
 
-<body>
+<body class="bg-light">
+
+    <!-- Voici l'entête de la page qui contient 2 composants: La barre de navigation et le carousel  -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+
+        <!-- La barre de navigation  -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">DWWM</a>
+                <a class="navbar-brand" href="index.html">DWWM</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -25,26 +32,26 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-withe" aria-current="page" href="#">Accueil</a>
+                            <a class="nav-link text-white" href="index.html">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-withe" href="#">blog</a>
+                            <a class="nav-link text-white" href="blog.html">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-withe" href="#">contact</a>
+                            <a class="nav-link text-white" href="contact.html">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-withe" href="#">connexion</a>
+                            <a class="nav-link text-white" href="login.html">Connexion</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-whithe" href="#">inscription</a>
+                            <a class="nav-link text-white" href="register.html">Inscription</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-<!-----carousel-->
+        <!-- Le carousel  -->
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -56,21 +63,21 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="image/carou0.png" class="d-block w-100" alt="tunnel de concert">
+                    <img src="image/carou0.png" class="d-block w-100" alt="Les artistes entrent sur la piste">
                     <div class="carousel-caption d-block">
                         <h5>First slide label</h5>
                         <p>Some representative placeholder content for the first slide.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="image/carou1.png" class="d-block w-100" alt="Scènes mains lever">
+                    <img src="image/carou1.png" class="d-block w-100" alt="Le public est passionné par la music">
                     <div class="carousel-caption d-block">
                         <h5>Second slide label</h5>
                         <p>Some representative placeholder content for the second slide.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="image/carou2.png" class="d-block w-100" alt="chanteur">
+                    <img src="image/carou2.png" class="d-block w-100" alt="L'artiste est à fond dans sa prestation">
                     <div class="carousel-caption d-block">
                         <h5>Third slide label</h5>
                         <p>Some representative placeholder content for the third slide.</p>
@@ -88,29 +95,137 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <!--fin carousel-->
+
     </header>
 
+    <!-- Voici le contenu spécifique à cette page  -->
     <main>
-        <section id="presentation_section">
-            <h1 class="display_3"> bonjour</h1>
-            <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure unde, praesentium error sunt esse numquam aliquid provident, iusto nam similique eius illum. Laboriosam tempore, neque quaerat maiores accusantium iusto. Reiciendis.</p>
 
+        <!-- Voici la section de présentation  -->
+        <section id="presentation-section" class="py-3">
+            <div class="container">
+                <h1 class="display-3">Hello World!</h1>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis mollitia similique
+                    accusantium
+                    veritatis, aut perspiciatis voluptatem tempora incidunt esse, repellendus voluptates impedit minus
+                    quae
+                    ea culpa fugit illo! Repellendus, dolore.</p>
+            </div>
         </section>
+
+        <!-- Voici la section des services -->
+        <section id="services-section" class="py-3">
+            <div class="py-5">
+                <div class="container py-5">
+                    <h2 class="text-center display-4 text-dark my-3">Les services</h2>
+                    <div class="row mt-5">
+                        <div class="col-md-4">
+                            <div class="card text-dark bg-light mb-3" style="max-width: 25rem;">
+                                <div class="card-header">Header</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Light card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card text-dark bg-light mb-3" style="max-width: 25rem;">
+                                <div class="card-header">Header</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Light card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card text-dark bg-light mb-3" style="max-width: 25rem;">
+                                <div class="card-header">Header</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Light card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Voici la section du Marketing  -->
+        <section id="marketing-section" class="py-3">
+            <div class="container">
+                <h2 class="display-4 text-center">lorem, ipsum dolor</h2>
+                <div class="row">
+                    <div class="col-md-6 d-flex justify-content-center align-item-center">
+                        <img src="image/sv1.svg" alt="haut-parleur">
+                    </div>
+                    <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+                        <h3 class="display-6 text-center">Marketing</h3>
+                        <ul>
+                            <li>adcd</li>
+                            <li>efgh</li>
+                            <li>ijkl</li>
+                            <li>mnop</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class=" order-md-2 col-md-6 d-flex justify-content-center align-items-center">
+                        <img src="image/sv2.svg" alt="haut-parleur">
+                    </div>
+                    <div class=" order-md-1 col-md-6 d-flex flex-column justify-content-center align-items-center">
+                        <h3 class="display-6 text-center">Marketing2</h3>
+                        <ul>
+                            <li>adcd</li>
+                            <li>efgh</li>
+                            <li>ijkl</li>
+                            <li>mnop</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 d-flex justify-content-center align-items-center">
+                        <img src="image/sv3.svg" alt="haut-parleur">
+                    </div>
+                    <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+                        <h3 class="display-6 text-center">Marketing3</h3>
+                        <ul>
+                            <li>adcd</li>
+                            <li>efgh</li>
+                            <li>ijkl</li>
+                            <li>mnop</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
 
     </main>
 
+    <footer class="py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <span class="text-white">DWM</span>
+            <a class="text-white" href="contact.html">contact</a>
 
-    <footer>
+        </div>
 
     </footer>
+
+
+    <!-- Bootstap 5 Scripts  -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
         crossorigin="anonymous"></script>
-
 </body>
 
 </html>
